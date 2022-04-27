@@ -3,20 +3,6 @@
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.6"/>
 <title>资源收藏库</title>
-<nobr id="box" style="color: rgba(255, 255, 255, 0.2)"></nobr>
-<script type="text/javascript">
-  function setStorage() {
-    if (localStorage.counter) {
-      localStorage.counter = Number(localStorage.counter) + 1;
-    } else {
-      localStorage.counter = 1;
-    }
-    return localStorage.counter;
-  }
-  var counter = setStorage();
-  var oBox = document.getElementById("box");
-  oBox.innerHTML = "访问次数：" + counter;
-</script>
 <script>
       function copyAble(element) {
         var id = "copy-able-el";
@@ -1039,6 +1025,58 @@ div {
             ;
             target="view_window"
           >
-<h1 style="width:100%; height:30px; line-height:35px; position:fixed; bottom:0px; left:0px; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size:14px; color: rgba(255,255,255,0.25); text-align:center;">@运筹帷幄xh_2022/04/26（更新）</h1>
+<h1 id="box" style="width:100%; height:30px; line-height:20px; position:fixed; bottom:0px; left:0px; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size:14px; color: rgba(255,255,255,0.25); text-align:center;">
+<script>
+var caution = false
+function setCookie(name, value, expires, path, domain, secure) {
+var curCookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "")
+if (!caution || (name + "=" + escape(value)).length <= 4000)
+document.cookie = curCookie
+else
+if (confirm("Cookie exceeds 4KB and will be cut!"))
+document.cookie = curCookie
+}
+function getCookie(name) {
+var prefix = name + "="
+var cookieStartIndex = document.cookie.indexOf(prefix)
+if (cookieStartIndex == -1)
+return null
+var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+if (cookieEndIndex == -1)
+cookieEndIndex = document.cookie.length
+return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+}
+function deleteCookie(name, path, domain) {
+if (getCookie(name)) {
+document.cookie = name + "=" +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+}
+}
+function fixDate(date) {
+var base = new Date(0)
+var skew = base.getTime()
+if (skew > 0)
+date.setTime(date.getTime() - skew)
+}
+var now = new Date()
+fixDate(now)
+now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+var visits = getCookie("counter")
+if (!visits)
+visits = 247
+else
+visits = parseInt(visits) + 1
+setCookie("counter", visits, now)
+document.write("欢迎光临，您是本站第 " + visits + " 位访问者！")
+</script>
+<br/>
+@运筹帷幄xh_2022/04/26（更新）
+</h1>
 </a>
 </html>
