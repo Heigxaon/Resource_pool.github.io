@@ -3,6 +3,20 @@
 <head>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.6"/>
 <title>资源收藏库</title>
+<nobr id="box" style="color: rgba(255, 255, 255, 0.2)"></nobr>
+<script type="text/javascript">
+  function setStorage() {
+    if (localStorage.counter) {
+      localStorage.counter = Number(localStorage.counter) + 1;
+    } else {
+      localStorage.counter = 1;
+    }
+    return localStorage.counter;
+  }
+  var counter = setStorage();
+  var oBox = document.getElementById("box");
+  oBox.innerHTML = "访问次数：" + counter;
+</script>
 <script>
       function copyAble(element) {
         var id = "copy-able-el";
@@ -70,18 +84,6 @@ form .text {
 	border: none;
 	border-bottom: 1px solid #fff7;
 	right: 0;
-}/*搜索框*/
-form .text {
-	position: fixed;
-	background: #0000;
-	width: 300px;
-	height: 20px;
-	text-align: center;
-	font-size: 18px;
-	color: #fff;
-	border: none;
-	border-bottom: 1px solid #fff7;
-	right: 0px;
 }/*搜索框*/
 body {
 	font-family: Verdana, sans-serif;/*字体*/
