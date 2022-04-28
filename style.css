@@ -1,0 +1,99 @@
+::-webkit-input-placeholder {
+/* Chrome */
+    color: #FFF5
+}
+
+:-ms-input-placeholder {
+/* IE 10+ */
+    color: #FFF5
+}
+
+::-moz-placeholder {
+/* Firefox 19+ */
+    color: #FFF5;
+    opacity: 1
+}
+
+:-moz-placeholder {
+/* Firefox 4 - 18 */
+    color: #FFF5;
+    opacity: 1
+}
+/*输入框占位文字颜色*/
+form .text {
+    position: fixed;
+    background: #0000;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff7;
+    right: 0
+}
+/*搜索框*/
+body {
+    font-family: Verdana,sans-serif;
+/*字体*/
+    background: #114357;
+    background: -webkit-linear-gradient(to left,#f29492,#114357);
+    background: linear-gradient(to left,#f29492,#114357);
+    font-size: 16px
+}
+/*背景*/
+hr {
+    border: 1px solid #fff8;
+/*分割线颜色*/
+    border-left: 200px solid #fff0;
+/*分割线左端*/
+    border-right: 200px solid #fff0;
+/*分割线右端*/
+}
+
+.text {
+    font-size: 16px;
+    display: inline-block;
+/*排列方式*/
+    text-align: left;
+/*对齐方式*/
+    line-height: 60px;
+/*行距*/
+    color: #fff7;
+/*颜色*/
+}
+
+.a {
+    color: #fff;
+/*链接文字颜色*/
+    font-size: 30px;
+/*链接文字大小*/
+    text-decoration: none;
+/*文本修饰*/
+    border-bottom: 1px solid #f29492b3;
+/*下划线粗细颜色*/
+}
+
+.summary {
+    color: #fff;
+/*类名颜色*/
+    font-size: 40px;
+/*类名大小*/
+}
+
+.copy_code {
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+/*复制按钮左边距*/
+    color: #fff7;
+/*密码颜色*/
+    cursor: pointer;
+/*光标类型:手指*/
+    line-height: 20px;
+/*行高*/
+    border: 1px dashed #114357b3;
+/*边框粗细 颜色*/
+    border-radius: 0px;
+/*边框圆角半径*/
+}
