@@ -8,32 +8,8 @@
 		</script>
 		<script src="script.js">
 		</script>
-		<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-		</script>
-		<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js">
-		</script>
-		<script>
-			$(document).ready(
-				window.timer = setInterval(function () {
-					if (parseInt($("#busuanzi_value_site_uv").html()) {
-						clearInterval(window.timer);
-					}
-					// 设置初始值
-					setInitialCount(467);
-				}, 500);
-
-			);
-			function setInitialCount(num) {
-				var busuanziSiteOffset = parseInt(num);
-
-				if ($("#busuanzi_container_site_uv").css("display") != "none") {
-					// 同理id也可以是busuanzi_container_page_pv
-					// busuanzi_container_site_uv
-					$("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + busuanziSiteOffset);
-				}
-
-			}
-		</script>
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+                </script>
 	</head>
 	<body>
 		<br/>
@@ -368,10 +344,11 @@
 	</body>
 	<a href="https://github.com/" ;target="view_window">
 		<div style="width:100%; height:30px; line-height:20px; position:fixed; bottom:20px; left:0px; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif; font-size:14px; color: rgba(255,255,255,0.2); text-align:center;">
-			<span id="busuanzi_container_site_uv">本站访客数
-				<span id="busuanzi_value_site_uv"></span>人次</span>&nbsp;&nbsp;&nbsp;&nbsp;
-			<span id="busuanzi_container_site_pv">本站总访问量
-				<span id="busuanzi_value_site_pv"></span>次</span>
+			<span id="busuanzi_container_site_pv">总访问量
+				<span id="busuanzi_value_site_pv"></span>次</span>👀│
+                        <span id="busuanzi_container_site_uv">访客数
+				<span id="busuanzi_value_site_uv"></span>人次</span>🚶‍♂️
+
 			<br/>@运筹帷幄xh_2022/04/28（更新）</div>
 	</a>
 
